@@ -1,0 +1,42 @@
+﻿@model StaffArtsofte.Models.EmployeeInfo
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Информация</h2>
+
+<div>
+    <h4>Инфа</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayFor(model => model.Name)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.Surname)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.Age)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Department)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.DepartmentName)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Language)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.LanguageName)
+        </dt>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Редактировать</a>
+    <a asp-action="Index">Вернуться к списку</a>
+</div>
